@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIDEOM | Dashboard mô hình ra quyết định</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark">A</div>
+        <div>
+          <h1>AIDEOM</h1>
+          <p>Mô hình ra quyết định phát triển kinh tế Việt Nam</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-footer">
+        <b>Bộ dữ liệu sử dụng</b>
+        <span>Vĩ mô Việt Nam 2020-2025</span>
+        <span>10 ngành kinh tế năm 2024</span>
+        <span>6 vùng kinh tế - xã hội năm 2024</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Dashboard mô hình ra quyết định</p>
+          <h2 id="pageTitle">Trang chủ</h2>
+        </div>
+        <div class="agent-config">
+          <label for="agentSelect">Tác nhân phân tích kết quả</label>
+          <select id="agentSelect">
+            <option value="academic">Tác nhân học thuật</option>
+            <option value="policy">Tác nhân chính sách</option>
+            <option value="critical">Tác nhân phản biện</option>
+            <option value="gemini">Gemini/Grok nếu tự tích hợp API</option>
+          </select>
+        </div>
+      </header>
+
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
